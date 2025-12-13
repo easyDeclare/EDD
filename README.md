@@ -18,6 +18,8 @@ If you use **easyDeclare** or **EDD** in your work, please cite the following pa
 
 ## Usage
 
+A demo video illustrating the main features of EDD is available. You can watch it [here](https://easyDeclare.github.io/EDD/tutorial.mp4).
+
 The tool can be used:
 - **Online**: [easyDeclare.github.io/EDD](https://easyDeclare.github.io/EDD). The online version is a limited version of the tool; **it does not support the discovery of declarative process models from a log file**.
 
