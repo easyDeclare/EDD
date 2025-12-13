@@ -1,0 +1,55 @@
+.constraint > *{
+  outline: none !important;
+}
+
+.constraint{
+  fill: transparent;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.constraint.temp{
+  stroke: darkgrey;
+}
+
+.constraint .line{
+  stroke: black;
+  pointer-events: none;
+}
+
+.constraint .selection-line{
+  stroke: greenyellow;
+}
+
+.constraint .icon{
+  fill: black;
+}
+.constraint .icon-content{
+}
+
+.constraint .icon-overlay{
+  pointer-events: all;
+  fill: transparent;
+  stroke: none;
+  cursor: pointer;
+}
+
+
+.constraint-tooltip-template hr{
+  background: #bdbdbd;
+}
+
+.constraint-tooltip-template .row.left{
+  text-align: left;
+}
+
+
+.constraint-tooltip-template .constraint-id{
+  font-family: monospace;
+  font-weight: 100;
+  font-size: small;
+}
+
+.constraint-tooltip-template .btn-sm{
+  font-size: 0.8em;
+}

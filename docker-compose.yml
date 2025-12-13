@@ -1,0 +1,11 @@
+services:
+  backend:
+    build: ./source/backend
+    container_name: EDD-backend
+    ports:
+      - "15123:15123"
+  frontend:
+    build: ./source/frontend
+    container_name: EDD-frontend
+    ports:
+      - "11234:11234"

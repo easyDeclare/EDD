@@ -1,0 +1,333 @@
+{
+  "fileType": "easyDeclareJson",
+  "version": "1.0",
+  "data": {
+    "id": "fd94f9f4-3f2e-4230-9993-df7e1970c167",
+    "name": "model",
+    "activities": [
+      {
+        "id": "A0",
+        "name": "Start Booking",
+        "geometry": {
+          "x": 59,
+          "y": 260,
+          "width": 140,
+          "height": 60
+        }
+      },
+      {
+        "id": "A1",
+        "name": "Undo Booking",
+        "geometry": {
+          "x": 753.0000219345093,
+          "y": 103.99999845027924,
+          "width": 140,
+          "height": 60
+        }
+      },
+      {
+        "id": "A2",
+        "name": "Provide Data",
+        "geometry": {
+          "x": 349,
+          "y": 260,
+          "width": 140,
+          "height": 60
+        }
+      },
+      {
+        "id": "A3",
+        "name": "Pay",
+        "geometry": {
+          "x": 350.00000381469727,
+          "y": 462.0000069141388,
+          "width": 140,
+          "height": 60
+        }
+      },
+      {
+        "id": "A4",
+        "name": "Complete Transaction",
+        "geometry": {
+          "x": 895.9999809265137,
+          "y": 541.0000019073486,
+          "width": 140,
+          "height": 60
+        }
+      },
+      {
+        "id": "A5",
+        "name": "Complete Booking",
+        "geometry": {
+          "x": 893.0000114440918,
+          "y": 419.9999876022339,
+          "width": 140,
+          "height": 60
+        }
+      },
+      {
+        "id": "A6",
+        "name": "Check-in",
+        "geometry": {
+          "x": 1083.0000038146973,
+          "y": 257.0000057220459,
+          "width": 140,
+          "height": 60
+        }
+      },
+      {
+        "id": "A7",
+        "name": "Board Flight",
+        "geometry": {
+          "x": 1079.9999504089355,
+          "y": 100.99999940395355,
+          "width": 140,
+          "height": 60
+        }
+      },
+      {
+        "id": "A8",
+        "name": "Rebook Flight",
+        "geometry": {
+          "x": 665.9999771118164,
+          "y": 259.0000054836273,
+          "width": 140,
+          "height": 60
+        }
+      }
+    ],
+    "constraints": [
+      {
+        "id": "C2",
+        "name": "AlternatePrecedence",
+        "data": {
+          "sourceActivityId": "A0",
+          "targetActivityId": "A2",
+          "sourceActivityName": "Start Booking",
+          "targetActivityName": "Provide Data",
+          "props": {}
+        },
+        "geometry": {
+          "x": 259,
+          "y": 275
+        }
+      },
+      {
+        "id": "C7",
+        "name": "AlternatePrecedence",
+        "data": {
+          "sourceActivityId": "A5",
+          "targetActivityId": "A8",
+          "sourceActivityName": "Complete Booking",
+          "targetActivityName": "Rebook Flight",
+          "props": {}
+        },
+        "geometry": {
+          "x": 834.4999942779541,
+          "y": 354.4999965429306
+        }
+      },
+      {
+        "id": "C10",
+        "name": "AlternatePrecedence",
+        "data": {
+          "sourceActivityId": "A6",
+          "targetActivityId": "A7",
+          "sourceActivityName": "Check-in",
+          "targetActivityName": "Board Flight",
+          "props": {}
+        },
+        "geometry": {
+          "x": 1136.4999771118164,
+          "y": 194.00000256299973
+        }
+      },
+      {
+        "id": "C3",
+        "name": "AlternateResponse",
+        "data": {
+          "sourceActivityId": "A8",
+          "targetActivityId": "A2",
+          "sourceActivityName": "Rebook Flight",
+          "targetActivityName": "Provide Data",
+          "props": {}
+        },
+        "geometry": {
+          "x": 562.4999885559082,
+          "y": 274.50000274181366
+        }
+      },
+      {
+        "id": "C6",
+        "name": "AlternateSuccession",
+        "data": {
+          "sourceActivityId": "A3",
+          "targetActivityId": "A4",
+          "sourceActivityName": "Pay",
+          "targetActivityName": "Complete Transaction",
+          "props": {}
+        },
+        "geometry": {
+          "x": 677.9999923706055,
+          "y": 516.5000044107437
+        }
+      },
+      {
+        "id": "C4",
+        "name": "ChainSuccession",
+        "data": {
+          "sourceActivityId": "A2",
+          "targetActivityId": "A3",
+          "sourceActivityName": "Provide Data",
+          "targetActivityName": "Pay",
+          "props": {}
+        },
+        "geometry": {
+          "x": 404.50000190734863,
+          "y": 376.0000034570694
+        }
+      },
+      {
+        "id": "C5",
+        "name": "ChainSuccession",
+        "data": {
+          "sourceActivityId": "A3",
+          "targetActivityId": "A5",
+          "sourceActivityName": "Pay",
+          "targetActivityName": "Complete Booking",
+          "props": {}
+        },
+        "geometry": {
+          "x": 676.5000076293945,
+          "y": 455.99999725818634
+        }
+      },
+      {
+        "id": "C14",
+        "name": "End",
+        "data": {
+          "sourceActivityId": "A7",
+          "targetActivityId": null,
+          "sourceActivityName": "Board Flight",
+          "targetActivityName": null,
+          "props": {}
+        },
+        "geometry": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "C1",
+        "name": "Existence",
+        "data": {
+          "sourceActivityId": "A0",
+          "targetActivityId": null,
+          "sourceActivityName": "Start Booking",
+          "targetActivityName": null,
+          "props": {
+            "min": "0",
+            "max": "1"
+          }
+        },
+        "geometry": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "C11",
+        "name": "Existence",
+        "data": {
+          "sourceActivityId": "A7",
+          "targetActivityId": null,
+          "sourceActivityName": "Board Flight",
+          "targetActivityName": null,
+          "props": {
+            "min": "0",
+            "max": "1"
+          }
+        },
+        "geometry": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "C0",
+        "name": "Init",
+        "data": {
+          "sourceActivityId": "A0",
+          "targetActivityId": null,
+          "sourceActivityName": "Start Booking",
+          "targetActivityName": null,
+          "props": {}
+        },
+        "geometry": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "id": "C9",
+        "name": "NotSuccession",
+        "data": {
+          "sourceActivityId": "A6",
+          "targetActivityId": "A8",
+          "sourceActivityName": "Check-in",
+          "targetActivityName": "Rebook Flight",
+          "props": {}
+        },
+        "geometry": {
+          "x": 929.4999904632568,
+          "y": 273.0000056028366
+        }
+      },
+      {
+        "id": "C12",
+        "name": "NotSuccession",
+        "data": {
+          "sourceActivityId": "A7",
+          "targetActivityId": "A1",
+          "sourceActivityName": "Board Flight",
+          "targetActivityName": "Undo Booking",
+          "props": {}
+        },
+        "geometry": {
+          "x": 971.4999861717224,
+          "y": 117.4999989271164
+        }
+      },
+      {
+        "id": "C13",
+        "name": "NotSuccession",
+        "data": {
+          "sourceActivityId": "A1",
+          "targetActivityId": "A2",
+          "sourceActivityName": "Undo Booking",
+          "targetActivityName": "Provide Data",
+          "props": {}
+        },
+        "geometry": {
+          "x": 606.0000109672546,
+          "y": 196.99999922513962
+        }
+      },
+      {
+        "id": "C8",
+        "name": "Precedence",
+        "data": {
+          "sourceActivityId": "A5",
+          "targetActivityId": "A6",
+          "sourceActivityName": "Complete Booking",
+          "targetActivityName": "Check-in",
+          "props": {}
+        },
+        "geometry": {
+          "x": 1043.0000076293945,
+          "y": 353.4999966621399
+        }
+      }
+    ]
+  }
+}

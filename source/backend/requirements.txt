@@ -1,0 +1,3 @@
+declare4py
+flask
+flask_cors
