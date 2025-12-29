@@ -7,10 +7,13 @@ A web-based editor to model declarative process models using the [easyDeclare](h
 If you use **easyDeclare** or **EDD** in your work, please cite the following paper:
 ```
 @article{easyDeclare,
-  title={Improving the Understandability of Declarative Process Discovery Results Using easyDeclare},
-  author={Blasilli, Graziano and Ferro, Lauren Stacey and Lenti, Simone and Maggi, Fabrizio Maria and Marrella, Andrea and Catarci, Tiziana},
-  journal = {Information Systems},
-  year={2026}
+title = {Improving the understandability of declarative process discovery results using easyDeclare},
+author = {Graziano Blasilli and Lauren S. Ferro and Simone Lenti and Fabrizio Maria Maggi and Andrea Marrella and Tiziana Catarci},
+journal = {Information Systems},
+pages = {102667},
+year = {2025},
+issn = {0306-4379},
+doi = {https://doi.org/10.1016/j.is.2025.102667}
 }
 ```
 
